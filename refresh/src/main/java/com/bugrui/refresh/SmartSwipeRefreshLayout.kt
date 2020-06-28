@@ -61,7 +61,7 @@ class SmartSwipeRefreshLayout : SwipeRefreshLayout {
      */
     private var refreshLoadMoreListener: OnSmartRefreshLoadMoreListener? = null
 
-    constructor(context: Context) : super(context, null)
+    constructor(context: Context) : this(context, null)
 
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
         setColorSchemeColors(
