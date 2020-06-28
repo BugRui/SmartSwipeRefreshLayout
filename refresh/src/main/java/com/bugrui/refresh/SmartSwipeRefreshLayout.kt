@@ -182,6 +182,15 @@ class SmartSwipeRefreshLayout : SwipeRefreshLayout {
         refreshLoadMoreListener?.onLoadMore()
     }
 
+
+    /**
+     * 自动刷新
+     */
+    fun autoRefreshing() {
+        isRefreshing = true
+        onRefreshing()
+    }
+
     /**
      * 加载刷新完成
      */
@@ -207,7 +216,7 @@ class SmartSwipeRefreshLayout : SwipeRefreshLayout {
     /**
      * 重置加载完成全部
      */
-    fun setNoLoadingMoreAll(){
+    fun setNoLoadingMoreAll() {
         mLoadingMoreCompleteAll = false
     }
 
