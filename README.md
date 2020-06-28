@@ -42,3 +42,12 @@ allprojects {
 </com.bugrui.refresh.SmartSwipeRefreshLayout>
 
 ```
+
+#### 配置预取距离，当前最后可见Item距离最后一条的Item (不配置默认为5)
+```
+setPrefetchDistance(5)
+```
+#### 自动刷新
+```
+autoRefreshing()
+```
