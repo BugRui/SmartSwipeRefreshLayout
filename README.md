@@ -42,12 +42,34 @@ allprojects {
 </com.bugrui.refresh.SmartSwipeRefreshLayout>
 
 ```
+### 自身配置
+```
 
-#### 配置预取距离，当前最后可见Item距离最后一条的Item (不配置默认为5)
-```
+//配置预取距离，当前最后可见Item距离最后一条的Item (不配置默认为5)
 setPrefetchDistance(5)
-```
-#### 自动刷新
-```
+
+//下拉刷新监听
+setOnRefreshingListener()
+
+//自动刷新
 autoRefreshing()
+
+//加载刷新完成
+finishRefreshing()
+
+//加载更多完成
+finishLoadingMore()
+
+//加载完成全部，不会继续加载,下拉刷新会重置
+finishLoadingMoreAll()
+
+//重置加载完成全部
+setNoLoadingMoreAll()
+
+//智能加载监听
+setOnLoadMoreListener()
+
+//下拉刷新和智能加载监听
+setOnRefreshLoadMoreListener()
 ```
+
