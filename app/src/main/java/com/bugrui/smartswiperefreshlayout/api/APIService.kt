@@ -16,6 +16,6 @@ interface APIService {
         const val BASE_URL = "http://gank.io/"
     }
 
-    @GET("api/data/福利/20/{page}")
+    @GET("api/data/福利/40/{page}")
     fun getData(@Path("page") page: Int): LiveData<ApiResponse<List<Gank>?>>
 }

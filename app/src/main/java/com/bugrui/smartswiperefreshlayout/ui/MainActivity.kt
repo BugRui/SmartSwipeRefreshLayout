@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(), OnSmartRefreshLoadMoreListener,
             recyclerView.smoothScrollToPosition(0)
         }
 
-        refreshLayout.setPrefetchDistance(18)
+        refreshLayout.setPrefetchDistance(35)
         refreshLayout.setOnRefreshLoadMoreListener(recyclerView, this)
         refreshLayout.autoRefreshing()
     }
