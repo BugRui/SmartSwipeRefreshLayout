@@ -19,8 +19,9 @@ allprojects {
   implementation 'com.github.BugRui:SmartSwipeRefreshLayout:v1.0.3'
  
 ```
+因为SmartSwipeRefreshLayout只在内部使用compileOnly，并且依赖于SwipeRefreshLayout和RecyclerView，所以需要将以下依赖项添加到自己的项目中，否则compileOnly将无法通过打包
 
-因为SmartSwipeRefreshLayout内部使用compileOnly依赖SwipeRefreshLayout和RecyclerView，需要在你自己的项目里添加以下依赖
+Because SmartSwipeRefreshLayout only USES compileOnly internally and relies on SwipeRefreshLayout and RecyclerView, you need to add the following dependencies to your project otherwise compileOnly will not pass
 
 ```
  implementation 'androidx.swiperefreshlayout:swiperefreshlayout:latest.integration'
