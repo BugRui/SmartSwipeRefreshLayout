@@ -2,7 +2,6 @@
 
 基于原生自带SwipeRefreshLayout封装，添加自动预加载数据，实现无感加载。
 
-Based on Android built-in SwipeRefreshLayout, add automatic pre-load data, realize non-inductive load.
 
 #### Step 1. Add the JitPack repository to your build file
 ```
@@ -21,7 +20,6 @@ allprojects {
 ```
 因为SmartSwipeRefreshLayout只在内部使用compileOnly，并且依赖于SwipeRefreshLayout和RecyclerView，所以需要将以下依赖项添加到自己的项目中，否则compileOnly将无法通过打包
 
-Because SmartSwipeRefreshLayout only USES compileOnly internally and relies on SwipeRefreshLayout and RecyclerView, you need to add the following dependencies to your project otherwise compileOnly will not pass
 
 ```
  implementation 'androidx.swiperefreshlayout:swiperefreshlayout:latest.integration'
@@ -54,31 +52,31 @@ Because SmartSwipeRefreshLayout only USES compileOnly internally and relies on S
 ### 自身配置 Its configuration
 ```
 
-//配置预取距离，当前最后可见Item距离最后一条的Item (默认为5) Configure the prefetch distance The default is 5
+//配置预取距离，当前最后可见Item距离最后一条的Item (默认为5) 
 setPrefetchDistance(5)
 
-//下拉刷新监听  Pull-down refresh listening
+//下拉刷新监听 
 setOnRefreshingListener()
 
-//自动刷新  Automatically refresh
+//自动刷新 
 autoRefreshing()
 
-//加载刷新完成  Load flush is complete
+//加载刷新完成 
 finishRefreshing()
 
-//加载更多完成 Load more complete
+//加载更多完成 
 finishLoadingMore()
 
-//加载完成全部，不会继续加载,下拉刷新会重置  The load is complete, the load will not continue, the dropdown refresh will reset
+//加载完成全部，不会继续加载,下拉刷新会重置  
 finishLoadingMoreAll()
 
-//重置加载完成全部   The reset load is complete
+//重置加载完成全部   
 setNoLoadingMoreAll()
 
-//智能加载监听   Intelligent load monitoring
+//智能加载监听  
 setOnLoadMoreListener()
 
-//下拉刷新和智能加载监听   Pull-down refresh and smart load listening
+//下拉刷新和智能加载监听  
 setOnRefreshLoadMoreListener()
 ```
 
